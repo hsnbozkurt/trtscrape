@@ -38,7 +38,7 @@ async function main() {
   for ({ date, epgData } of __NUXT__.data[0].streamEpg) {
     //   epgData = epgData[0].tvChannels;
     for (channel of epgData[0].tvChannels) {
-      if (channel.current) {
+      if (channel.current?.title) {
         channel.upcoming.unshift({
           title: channel.current.title,
           starttime: channel.current.starttime,
