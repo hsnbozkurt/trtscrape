@@ -48,8 +48,8 @@ async function main() {
       const upcoming = channel.upcoming.map((c) => {
         return {
           title: c.title,
-          start: c.starttime,
-          end: c.endtime,
+          start: c.starttime.replace("Z", ""),
+          end: c.endtime.replace("Z", ""),
         };
       });
       channelsmap.set(
