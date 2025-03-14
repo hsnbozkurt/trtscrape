@@ -41,8 +41,8 @@ async function main() {
       if (channel.current) {
         channel.upcoming.unshift({
           title: channel.current.title,
-          start: channel.current.starttime,
-          end: channel.current.endtime,
+          starttime: channel.current.starttime,
+          endtime: channel.current.endtime,
         });
       }
       const upcoming = channel.upcoming.map((c) => {
