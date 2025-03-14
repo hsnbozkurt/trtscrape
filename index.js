@@ -67,7 +67,5 @@ async function main() {
       JSON.stringify(channel)
     );
   }
-
-  fs.writeFileSync("trt.html", html);
 }
 main();
